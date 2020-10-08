@@ -97,10 +97,6 @@ My website "NATALY FASHION STUDIO" consist of many pages.
 
 ================================================================================================================
 
-I hope you like my website :-)
-
-Thank you.
-
 
 
 
