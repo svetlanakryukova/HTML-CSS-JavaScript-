@@ -1,7 +1,6 @@
-Final Project
 Web Client Development
 420-DW2-AS
-Presented by: Kryukova Svetlana
+
 ================================================================================================================
 
 The project consists in designing and developing a website.
