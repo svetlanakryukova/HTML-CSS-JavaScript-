@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Studio | Shopping</title>
+    <link rel="shortcut icon" href="./media/iconfinder_image.png" type="image/png">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+</head>
+<body>
+ <div class="wrapper" >
+   <div class="page"> 
+
+<!-- /*Start of Header/    -->
+               <div class="header-container">
+                   <div id="brand">
+                     <h1><img src="./media/logo.png" alt="Nataly" /><span class="highlight">NATALY Fashion Studio  </span></h1>
+                   </div>
+                   <nav>
+                     <ul>
+                      <li><a href="./welcome.html">Welcome</a></li>
+                      <li ><a href="./sketch_gallery.html">Sketchs</a></li>
+                      <li><a href="./finished_items.html">Items</a></li>
+                      <li class="current"><a href ="./shopping.html">Shopping</a></li>
+                      <li><a href ="./invoice.html">Invoice</a></li>
+                      <li><a href ="./index.html">Logout</a></li>
+                     </ul>
+                   </nav>
+               </div>
+       
+<!-- /*End of header content */   <splat></splat>-->
+       
+<!-- Start of main content */           -->
+         <div class="main-container">
+          
+                    <div class="title"><img src="./media/frame.png"><h1>Shopping</h1></div>
+                    
+
+                  <form class="myform">
+                    <img src="./media/currency_USD.png">
+                    <img src="./media/mycart.png" width="80px">
+                    <input id="input_total_sum" type="text" name="sumOut" disable="false" value="" placeholder="total price" readonly >
+                    <input id="input_total_number" type="text" name="numOut" disable="false" value="" placeholder="quantity" readonly>
+                    <button id="button_clear_cart">CLEAR CART</button>
+                    <a href="#shoppingbag" title="Go to the cart"><input id="button_view_cart" type="button" value="view cart and checkout"></a>
+                    
+                    
+                  
+                  </form>
+                  
+                  <div class="grid-container">
+
+                    <div id="img_desc">
+                          <img id="grid-img" src="./media/IMG_1.jpg">
+                            <div id="divAddToCard">
+                            <ul>
+                                <li ><span id="name_items">Opera</span></li>
+                                <li><label>Price: </label><input id="price1" type="text" value="550.99" readonly></li>
+                                <li><lebel>Number: </lebel><input type="number" id="quantity1" min=0 max=4 value="0"></li>
+                                <li><lebel>Add to cart: </lebel><input  type="radio" id="checkbox_price1" ></li>
+                                <li><a href="#shoppingbag">view cart</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="img_desc">
+                      <img id="grid-img" src="./media/IMG_2.jpg">
+                      <div id="divAddToCard">
+                        <ul>
+                          <li><span id="name_items2">Legend</span></li>
+                          <li><label>Price: </label><input id="price2" type="text" value="700.99" readonly></li>
+                          <li><lebel>Number: </lebel><input type="number" id="quantity2" min=0 max=4 value="0"></li>
+                          <li><lebel>Add to cart: </lebel><input  type="radio" id="checkbox_price2" ></li>
+                          <li><a href="#shoppingbag">view cart</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div id="img_desc">
+                      <img id="grid-img" src="./media/IMG_3.jpg">
+                      <div id="divAddToCard">
+                        <ul>
+                          <li><span id="name_items3">Dream</span></li>
+                          <li><label for="price3">Price: </label><input id="price3" type="text" value="450.99" readonly></li>
+                          <li><lebel>Number: </lebel><input type="number" id="quantity3" min=0 max=4 value="0" ></li>
+                          <li><lebel>Add to cart: </lebel><input  type="radio" id="checkbox_price3" ></li>
+                          <li><a href="#shoppingbag">view cart</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div id="img_desc">
+                      <img id="grid-img" src="./media/IMG_4.jpg">
+                      <div id="divAddToCard">
+                        <ul>
+                          <li><span id="name_items4">Film</span></li>
+                          <li><label for="price">Price: </label><input id="price4" type="text" value="700.99" readonly></li>
+                          <li><lebel>Number: </lebel><input type="number" id="quantity4" min=0 max=4 value="0"></li>
+                          <li><lebel>Add to cart: </lebel><input  type="radio" id="checkbox_price4" ></li>
+                          <li><a href="#shoppingbag">view cart</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div id="img_desc">
+                      <img id="grid-img" src="./media/IMG_5.jpg">
+                      <div id="divAddToCard">
+                        <ul>
+                          <li><span id="name_items5">Evening</span></li>
+                          <li><label for="price">Price: </label><input id="price5" type="text" value="300.99" readonly></li>
+                          <li><lebel>Number: </lebel><input type="number" id="quantity5" min=0 max=4 value="0"></li>
+                          <li><lebel>Add to cart: </lebel><input  type="radio" id="checkbox_price5" ></li>
+                          <li><a href="#shoppingbag">view cart</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div id="img_desc">
+                      <img id="grid-img" src="./media/IMG_6.jpg">
+                      <div id="divAddToCard">
+                        <ul>
+                          <li><span id="name_items6">Wind</span></li>
+                          <li><label for="price">Price: </label><input id="price6" type="text" value="690.99" readonly></li>
+                          <li><lebel>Number: </lebel><input type="number" id="quantity6" min=0 max=4 value="0"></li>
+                          <li><lebel>Add to cart: </lebel><input  type="radio" id="checkbox_price6" ></li>
+                          <li><a href="#shoppingbag">view cart</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div id="img_desc">
+                      <img id="grid-img" src="./media/img-7.png">
+                      <div id="divAddToCard">
+                        <ul>
+                          <li><span id="name_items7">Cloud</span></li>
+                          <li><label for="price">Price: </label><input id="price7" type="text" value="550.99" readonly></li>
+                          <li><lebel>Number: </lebel><input type="number" id="quantity7" min=0 max=4 value="0"></li>
+                          <li><lebel>Add to cart: </lebel><input  type="radio" id="checkbox_price7" ></li>
+                          <li><a href="#shoppingbag">view cart</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div id="img_desc">
+                      <img id="grid-img" src="./media/img-8.png">
+                      <div id="divAddToCard">
+                        <ul>
+                          <li><span id="name_items8">Rainbow</span></li>
+                          <li><label for="price">Price: </label><input id="price8" type="text" value="690.99" readonly></li>
+                          <li><lebel>Number: </lebel><input type="number" id="quantity8" min=0 max=4 value="0"></li>
+                          <li><lebel>Add to cart: </lebel><input  type="radio" id="checkbox_price8" ></li>
+                          <li><a href="#shoppingbag">view cart</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div id="img_desc">
+                      <img id="grid-img" src="./media/img-9.png">
+                      <div id="divAddToCard">
+                        <ul>
+                          <li><span id="name_items9">Drama</span></li>
+                          <li><label for="price">Price: </label><input id="price9" type="text" value="300.99" readonly></li>
+                          <li><lebel>Number: </lebel><input type="number" id="quantity9" min=0 max=4 value="0"></li>
+                          <li><lebel>Add to cart: </lebel><input  type="radio" id="checkbox_price9" ></li>
+                          <li><a href="#shoppingbag">view cart</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div id="img_desc">
+                      <img id="grid-img" src="./media/img-10.png">
+                      <div id="divAddToCard">
+                        <ul>
+                          <li><span id="name_items10">Sun</span></li>
+                          <li><label for="price">Price: </label><input id="price10" type="text" value="350.99" readonly></li>
+                          <li><lebel>Number: </lebel><input type="number" id="quantity10" min=0 max=4 value="0"></li>
+                          <li><lebel>Add to cart: </lebel><input  type="radio" id="checkbox_price10" ></li>
+                          <li><a href="#shoppingbag">view cart</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div id="img_desc">
+                      <img id="grid-img" src="./media/img-11.png">
+                      <div id="divAddToCard">
+                        <ul>
+                          <li><span id="name_items11">Red</span></li>
+                          <li><label for="price">Price: </label><input id="price11" type="text" value="250.99" readonly></li>
+                          <li><lebel>Number: </lebel><input type="number" id="quantity11" min=0 max=4 value="0"></li>
+                          <li><lebel>Add to cart: </lebel><input  type="radio" id="checkbox_price11" ></li>
+                          <li><a href="#shoppingbag">view cart</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div id="img_desc">
+                      <img id="grid-img" src="./media/img-12.png">
+                      <div id="divAddToCard">
+                        <ul>
+                          <li><span id="name_items12">Star</span></li>
+                          <li><label for="price">Price: </label><input id="price12" type="text" value="399.99" readonly></li>
+                          <li><lebel>Number: </lebel><input type="number" id="quantity12" min=0 max=4 value="0"></li>
+                          <li><lebel>Add to cart: </lebel><input  type="radio" id="checkbox_price12" ></li>
+                          <li><a href="#shoppingbag">view cart</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                 </div>
+
+             <br><br><br><br><br>
+          
+                <div class="title"><img src="./media/frame.png"><h1>Cart Items</h1><img id="shoppingbag" src="media/shoppingbag.png"></div>
+
+                <div class="cart-items">
+                      <div class="cart-row-title">
+                        <span ><h3>Name item</h3></span>
+                        <span><h3>Price</h3></span>
+                        <span><h3>Quantity</h3></span>
+                        <span><h3>Product Total</h3></span>
+                      </div>
+                      <!-- <div class="cart-row">
+                            <span class="cart-items-title"></span>
+                            <span class="cart-price"></span>
+                            <span class="cart-quantity"></span>
+                            <span class="cart-row-total"></span>
+                      </div> -->
+                 </div>
+                 
+                 <div class="cart-items">
+                    <div class="cart-row-title">
+                      <span class="cart_total_price_title">Total </span>  
+                      <strong class="cart_total_quantity_title"></strong>  
+                      <span class = "cart_total_quantity">0</span>  
+                      <span class = "cart_total_price" >0</span>
+                    </div>
+                </div><br><br>
+
+
+                <button id="goToInvoice" onclick="buttonClicked2()">Proceed to checkout</button><br>
+                
+                <p>  <a href="#"><img src="./media/backtop.png" title="Back up"></a></p>
+                
+         </div>
+<!-- /*End of main content*/ -->
+
+<!-- /*Start of footer*/ -->
+          <div class = "footer-container">
+               <div class="social_box">
+                     <div class="facebook"><a title="Facebook" href="https://www.facebook.com/"></a></div>
+                     <div class="twitter"><a title="Twitter" href="https://www.twitter.com"></a></div>
+                     <div class="linkedin"><a title="Linkedin" href="https://ca.linkedin.com/"></a></div>
+                     <div class="youtube"><a title="Youtube" href="https://www.youtube.com"></a></div>
+               </div>
+                   <div class=copyrigth>
+                    
+                    <p><h1>Call us +1 999 999 9999</h1></p> 
+                    <p><h1>Copyrigth &copy; Svetlana Kryukova 2020</h1></p>
+                   </div>
+          </div>
+
+<!-- /*End of footer*/ -->
+
+   </div>
+<!-- /*End of page box*/     -->
+
+ </div>
+<!-- /* End of WRAPPER*/ -->
+     
+</body>
+       <script src="./js/shopping.js"></script>
+</html> 

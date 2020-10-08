@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Studio | Invoice</title>
+    <link rel="shortcut icon" href="./media/iconfinder_image.png" type="image/png">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+</head>
+<body>
+ <div class="wrapper" >
+   <div class="page"> 
+
+<!-- /*Start of Header/    -->
+               <div class="header-container">
+                   <div id="brand">
+                     <h1><img src="./media/logo.png" alt="Nataly" /><span class="highlight">NATALY Fashion Studio  </span></h1>
+                   </div>
+                   <nav>
+                     <ul>
+                      <li><a href="./welcome.html">Welcome</a></li>
+                      <li ><a href="./sketch_gallery.html">Sketchs</a></li>
+                      <li><a href="./finished_items.html">Items</a></li>
+                      <li><a href ="./shopping.html">Shopping</a></li>
+                      <li class="current"><a href ="./invoice.html">Invoice</a></li>
+                      <li><a href ="./index.html">Logout</a></li>
+                     </ul>
+                   </nav>
+               </div>
+       
+<!-- /*End of header content */   -->
+       
+<!-- Start of main content */           -->
+        <div class="main-container">
+
+            <div class="title"><img src="./media/frame.png"><h1>Invoice</h1></div>
+
+            <h1 class="title">Order Summary</h1>
+
+            <div class="invoice">
+
+              
+              <h3>Product Name</h3><h3>Quantity</h3><h3>Product Subtotal</h3><h3>Estimated Total</h3>
+              <input id="name_items"  value = "Sewing coupon " readonly>
+              <input id="total_numbers" readonly>
+              <input id="total_price" readonly>
+              <input id="total_invoice" readonly>
+            </div><br><br><br>
+
+            <div class="title"><img src="./media/free_shipping.jpg"><h1>Finalise Payment</h1></div>
+
+
+            <div id="choiseMetodOfPayment">
+                    <img src="./media/amexp.jpg"><img src="./media/mastercard.jpg"><img src="./media/visa.jpg">
+                    <input id="amcard" name="typecard" type="radio" value="amexpcard">
+                    <input id="mscard" name="typecard" type="radio" value="mastercard">
+                    <input id="vscard" name="typecard" type="radio" value="visacard" >
+            </div>
+
+
+            <div class="boxMethodOfPayment">
+
+                  <form>
+                    <h3>Payment Information</h3>
+                    <h5>* Card Number</h5>
+                    <input id ="card_number" name ="card_number" type="text" placeholder="card number" minlength="15" required>
+                    <p>Choose your card type. Card Number must be contain 16 numbers for AMX, Mastercard and 15 for Visa </p>
+                    
+                    <h5>* CVC</h5>
+                    <input id="cvc" name="cvc" type="password" placeholder="000" required maxlength="">
+                    <p>CVC code must be contain 3 digital number</p>
+                    
+                    <h5>* Cardholder name</h5>
+                    <input id="card_name" name="card_name" type="text" placeholder="FIRSTNAME LASTNAME" required>
+                    <p>Cardholder name must be contain FirstName and LastNname separeted by space. Only capital letters (max 31 characters)</p>
+                    
+                    <h5>* Expiration date</h5>
+                    <input id="expiration" name="expiration" type="text" placeholder="MM/YY" required >
+                    <p>Expiration date date must be contain 4 digital number between them /  Ex:02/20 </p>
+                    
+                    <button id="clear_button" >Clear</button>
+                    
+                    <h5>Total Purchase</h5>
+                    <input id ="totalPurchase" name="totalPurchase" type="text" placeholder="total" readonly>
+                    <lebel for="chek_card"> *** Agree terms and Conditions</lebel>
+                    
+                    <input id="chek_card"  name="chek_card" type="checkbox" required>
+                    <p id="err_chek_card"></p>
+                  </form>
+                  
+                  
+                  <form >
+                    <h3>Ship to this address</h3>
+
+                    <h5>* Full name</h5>
+                    <input id="name" name="name" type="text" placeholder="Fname Lname" required>
+                    <p>Full name must be contain FirstName and LastName separeted by space. They start whith capital letter (min 3 - max 31 characters)</p>
+
+
+                    <h5>* Address</h5>
+                    <input id="address" name="address" type="text" placeholder="address" required>
+                    <p>Address must be contain 5-30 characters and numbers</p>
+
+
+
+                    <h5>Address Line2</h5>
+                    <input id="address2" name="address2" type="text" placeholder="address">
+                    <p></p>
+
+
+                    <h5>* City</h5>
+                    <input id="city" name="city" type="text" placeholder=" City" required>
+                    <p>City must be contain First Capital letter</p>
+
+
+                    <h5>* Postal Code</h5>
+                    <input id="postalcode" name="postalcode" type="text" placeholder="H0W0Y0" required maxlength="6">
+                    <p>Postal Code must be contain only capital letters and numbers. Exp: H4W2Y2 </p>
+
+                    <h5>* Province</h5>
+                    <input  id="province" name="province" type="text" placeholder="Province" required>
+                    <p>Province must be contain First Capital letter</p>
+
+
+                    <h5>Country</h5>
+                    <select name="country" id="country"><p></p>
+                      <option value=""></option>
+                      <option value="ca">Canada</option>
+                      <option value="usa">USA</option>
+                      <option value ="uk">UK</option>
+                    </select>
+                    
+                   </form>
+            </div>
+                      
+                      <button id="checkout" type="submit" value="Continue" onclick="buttonClicked4()">Continue</button>        
+
+                      <p>  <a href="#"><img src="./media/backtop.png" title="Back up"></a></p> 
+
+        </div>
+<!-- /*End of main content*/ -->
+
+<!-- /*Start of footer*/ -->
+          <div class = "footer-container">
+               <div class="social_box">
+                     <div class="facebook"><a title="Facebook" href="https://www.facebook.com/"></a></div>
+                     <div class="twitter"><a title="Twitter" href="https://www.twitter.com"></a></div>
+                     <div class="linkedin"><a title="Linkedin" href="https://ca.linkedin.com/"></a></div>
+                     <div class="youtube"><a title="Youtube" href="https://www.youtube.com"></a></div>
+               </div>
+                   <div class=copyrigth>
+                    <p><h1>Call us +1 999 999 9999</h1></p> 
+                    <p><h1>Copyrigth &copy; Svetlana Kryukova 2020</h1></p>
+                   </div>
+          </div>
+
+<!-- /*End of footer*/ -->
+
+
+
+
+   </div>
+<!-- /*End of page box*/     -->
+
+
+
+ </div>
+<!-- /* End of WRAPPER*/ -->
+     
+</body>
+      <!-- <script src="./js/shopping.js"></script> -->
+      <script src="./js/invoice.js"></script>
+</html> 
